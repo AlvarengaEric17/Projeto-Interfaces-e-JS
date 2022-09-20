@@ -195,3 +195,11 @@ input[type=button]:hover {
     margin-bottom: 30px;
     font-weight: bold;
 }
+
+.lista :hover {
+    transform: scale(1.1);
+}
+
+.lista {
+    transition: transform .3s;
+}
