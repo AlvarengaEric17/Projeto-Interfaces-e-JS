@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cálculo do IMC</title>
     <link rel="stylesheet" href="css/style.css">
- 
-        
+
+
 </head>
 
 <body>
@@ -16,9 +16,11 @@
         <header>
             <nav>
                 <ul class="lista">
-                    <li class="menu "><a href="index.html">
+                    <li class="menu ">
+                        <a href="index.html">
                             <h2>MedLand</h2>
-                        </a></li>
+                        </a>
+                    </li>
                     <li class="menu"><a href="index.html">Home</a></li>
                     <li class="menu"><a href="alimentacao.html">Alimentação</a></li>
                     <li class="menu"><a href="atividade_fisica.html">Atividade Física</a></li>
@@ -30,9 +32,8 @@
             <h2>O que é o IMC?</h2>
             <p class="paragrafo_imc">
 
-                O IMC é um índice que mede se você está abaixo, dentro ou acima do peso, de acordo com a relação entre
-                seu peso e altura. Descubra como calcular esse índice, quais os valores ideais, as exceções da tabela
-                padrão, a especificidade do IMC para crianças e jovens e muito mais neste artigo completo.</p>
+                O IMC é um índice que mede se você está abaixo, dentro ou acima do peso, de acordo com a relação entre seu peso e altura. Descubra como calcular esse índice, quais os valores ideais, as exceções da tabela padrão, a especificidade do IMC para crianças
+                e jovens e muito mais neste artigo completo.</p>
 
             <div class="img_1">
 
@@ -46,24 +47,52 @@
 
             <h3 style="margin-top: 20px;">Como o cálculo é realizado?</h3>
 
-            <p class="paragrafo_imc">Cálculo do Índice de Massa Corporal
+            <p class="paragrafo_imc">Cálculo do Índice de Massa Corporal Para a sua posição na tabela do Índice de Massa Corporal, você precisa de dois valores: seu peso e altura. É só dividir o peso (em quilos) pelo quadrado da altura (em metros), que é obtido pela multiplicação
+                da altura por ela mesma. Então, a fórmula fica assim: IMC = Peso / Altura². </p>
 
-                Para a sua posição na tabela do Índice de Massa Corporal, você precisa de dois valores: seu peso e
-                altura. É só dividir o peso (em quilos) pelo quadrado da altura (em metros), que é obtido pela
-                multiplicação da altura por ela mesma. Então, a fórmula fica assim: IMC = Peso / Altura². </p>
 
-                
         </section>
 
-        <section>
+        <table>
+            <tr>
+                <th>IMC</th>
+                <th>Classificação</th>
+            </tr>
+            <tr>
+                <td>Menor 18,5</td>
+                <td>Abaixo do peso</td>
+                <tr>
+                    <td>Entre 18,5 e 24,9</td>
+                    <td>Peso normal</td>
+                </tr>
+                <tr>
+                    <td>Entre 25 e 29,9</td>
+                    <td>Acima do peso (sobrepeso)</td>
+                </tr>
+                <tr>
+                    <td>Entre 30 e 34,9</td>
+                    <td>Obesidade I</td>
+                </tr>
+                <tr>
+                    <td>Entre 35 e 39,9</td>
+                    <td>Obesidade II</td>
+                </tr>
+                <tr>
+                    <td>Maior do que 40</td>
+                    <td>Obesidade III</td>
+                </tr>
+            </tr>
+        </table>
 
-            <p>Nome: <input type="text" name="nome" id="nome" required></p>
-            <p>Peso: <input type="number" name="peso" id="peso"></p>
-            <p>Altura <input type="number" name="altura" id="altura"></p>
-            <p><input type="button" value="Calcular" onclick="calcular()"></p>
+        <section class="space">
+
+            <p class="letra_calculo">Nome: <input type="text" name="nome" id="nome" required></p>
+            <p class="letra_calculo">Peso: <input class="calcular" type="number" name="peso" id="peso"></p>
+            <p class="letra_calculo">Altura: <input type="number" name="altura" id="altura"></p>
+            <p class="letra_calculo"><input type="button" value="Calcular" onclick="calcular()"></p>
 
             <div id="res">
-    
+
             </div>
         </section>
 
