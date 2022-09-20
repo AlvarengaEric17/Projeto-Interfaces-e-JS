@@ -152,3 +152,8 @@ section img {
 .space{
     margin-bottom: 30px;
 }
+
+
+input {
+    border: 1px solid black;
+}
